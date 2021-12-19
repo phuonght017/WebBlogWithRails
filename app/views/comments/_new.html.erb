@@ -1,0 +1,19 @@
+<div class="section">
+<%= form_for [@post, Comment.new]  do |form| %>
+    <table>
+    <td style="vertical-align:middle">
+    <div class="field cmt-items">
+      <div class="control">
+        <%=image_tag "user.png", class:"avatar-cmt avatar for-user"%> 
+        <%= form.text_area :content%>
+      </div>
+    </div>
+    </td>
+    <td>
+    <div class="actions cmt-items">
+        <%= form.submit t('.send'), class: "btn btn-form" %>
+    </div>
+    </td>
+    </table>
+<% end %>
+</div>

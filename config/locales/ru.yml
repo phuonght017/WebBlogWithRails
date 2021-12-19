@@ -1,0 +1,36 @@
+ru:
+  layouts:
+        application:
+          create-post: 'Создать запись'
+          profile: 'Профиль'
+          log-out: 'Выйти'
+          log-in: 'Войти'
+          sign-up: 'Зарегистрироваться'
+  posts:
+        index:
+          read: 'Прочитать'
+          edit: 'Редактировать'
+          delete: 'Удалить'
+        show:
+          edit: 'Редактировать'
+          back: 'Назад'
+          comments: 'Комментарий'
+          write-your-cmt: 'Напишить комментарий'
+        new:
+          title: 'Заглавие'
+          content: 'Содержание'
+          topic: 'Tема'
+          create_post: 'Создать запись'
+          travel: 'Путешествие'
+          food: 'Еда'
+          pet: 'Домашний питомец'
+          work: 'Работы'
+          flower: 'Цветы'
+          friend: 'Дружба'
+          love: 'Любовь'
+          post: 'Опубликовать'
+  comments:
+        new:
+          send: 'Отправить'
+        comment:
+          delete: 'Удалить'

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Commu</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'%>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-md">
+        <%= link_to 'Commu', root_path, class: "navbar-brand"  %>
+    </div>
+    <div class="nav navbar-right">
+      <ul class="nav navbar-nav navbar-right">
+        <%if !current_user %>
+          <li><button type="button" class="btn"><%= link_to t('.log-in'), login_path %></button></li>
+          <li><button type="button" class="btn"><%= link_to t('.sign-up'), new_user_path %></button></li>
+        <%else%>
+          <li><button type="button" class="btn"><%= link_to t('.create-post'), new_post_path %></button></li>
+          <li><button type="button" class="btn"><%= link_to t('.profile'), user_path(current_user) %></button></li>
+          <li><button type="button" class="btn"><%= link_to t('.log-out'), logout_path %></button></li>          
+        <%end%>
+        <li><%= link_to 'English', locale: "en" %></li> |
+        <li><%= link_to 'Русский', locale: "ru" %></li>
+      </ul>
+    </div>
+  </nav>
+  <!--End of Navbar-->     
+  <%= yield %>
+  </body>
+</html>

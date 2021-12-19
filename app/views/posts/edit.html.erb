@@ -1,0 +1,43 @@
+<div class="show-post-card">
+  <div class="section">
+  <%= form_with(model: @post) do |form| %>
+      <fieldset>
+        <legend>Edit post</legend>
+          <div class="mb-3 row">
+            <%= form.label :title, class: "col-sm-2 col-form-label" %>  
+            <div class="col-sm-8">
+              <%= form.text_field :title, class: "form-control" %>
+            </div>          
+          </div>      
+          <div class="mb-3 row">
+            <%= form.label :content, class: "col-sm-2 col-form-label" %>  
+            <div class="col-sm-8">
+              <%= form.text_area :content, rows: 17,  class: "form-control text-area-post" %>
+            </div>          
+          </div>    
+          <div class="mb-3 row">
+            <div class="col-sm-2 col-form-label"><strong>Topic</strong></div>
+            <div class="col-sm-8">
+              <%= form.radio_button :topic, 'travel' %>
+              <%= form.label :topic, 'Travel', :value => 'travel' %>
+              <%= form.radio_button :topic, 'food' %>
+              <%= form.label :topic, 'Food', :value => 'food' %>
+              <%= form.radio_button :topic, 'pet' %>
+              <%= form.label :topic, 'Pet', :value => 'pet' %>   
+              <%= form.radio_button :topic, 'work' %>
+              <%= form.label :topic, 'Work', :value => 'work' %>   
+              <%= form.radio_button :topic, 'flower' %>
+              <%= form.label :topic, 'Flower', :value => 'flower' %>  
+              <%= form.radio_button :topic, 'friend' %>
+              <%= form.label :topic, 'Friend', :value => 'friend' %>  
+              <%= form.radio_button :topic, 'love' %>
+              <%= form.label :topic, 'Love', :value => 'love' %> 
+            </div>   
+          </div> 
+          <div class="actions group-btn">
+            <%= form.submit "Update post", class: "btn btn-form" %>
+          </div>                          
+      </fieldset>
+  <% end %>
+  </div>
+</div>

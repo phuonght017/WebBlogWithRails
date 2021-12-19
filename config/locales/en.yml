@@ -1,0 +1,41 @@
+en:
+  layouts:
+        application:
+          create-post: 'Create post'
+          profile: 'Profile'
+          log-out: 'Log out'
+          log-in: 'Log in'
+          sign-up: 'Sign up'
+  posts:
+        index:
+          read: 'Read'
+          edit: 'Edit'
+          delete: 'Delete'
+        show:
+          title: 'Title'
+          content: 'Content'
+          posted_by: 'Posted by'
+          topic: 'Topic'
+          edit: 'Edit'
+          back: 'Back'
+          comments: 'Comments'
+          write-your-cmt: 'Write your comment'
+        new:
+          create_post: 'Create your post'
+          title: 'Title'
+          content: 'Content'
+          topic: 'Topic'
+          travel: 'Travel'
+          food: 'Food'
+          pet: 'Pet'
+          work: 'Work'
+          flower: 'Flower'
+          friend: 'Friend'
+          love: 'Love'
+          post: 'Post'
+  comments:
+        new:
+          send: 'Send'
+        comment:
+          delete: 'Delete'
+        

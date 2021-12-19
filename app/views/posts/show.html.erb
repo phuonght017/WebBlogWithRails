@@ -1,0 +1,25 @@
+<div class="show-post-card">
+  <h2><%= @post.title %></h2>
+  <%=image_tag "user.png", class:"avatar for-user"%>
+  <h5 class="for-user"><%= " - #{@post.user.username}"%></h5>  
+  <div class="side-btn">
+    <%= link_to t('.edit'), edit_post_path(@post), class: "side-btn-link" %> |
+    <%= link_to t('.back'), root_path, class: "side-btn-link"%> 
+  </div>
+  <hr class="solid">
+  <p><%= @post.content %></p>
+</div>
+
+<div class="show-post-card">
+  <section class="section comments">
+    <div class="container">
+        <h2 class="count-cmt"><%= @post.comments.count %> <%=t('.comments') %></h2>
+        <%= render @post.comments%>
+        <div class="comment-form">
+            <hr />
+            <h3 class="cmt-label"><%=t('.write-your-cmt')%></h3>
+             <%= render 'comments/new' %>
+        </div>
+    </div>
+  </section>
+</div>

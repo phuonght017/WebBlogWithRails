@@ -1,0 +1,38 @@
+<% content_for :page_title,  "Index" %>
+
+<div class="section">
+  <div class="container">
+    <% @posts.each do |post| %>
+      <div class="card-post">
+        <table>
+          <tr>
+            <td colspan="1" class="thumb">
+              <div>       
+                <%=image_tag "#{post.topic}.jpg", class: "thumbnail"%>       
+              </div>
+            </td>
+            <td colspan="5">
+              <div class="post-content">
+                <div> 
+                  <%=image_tag "user.png", class:"avatar for-user"%>
+                  <p class="post-user for-user"><%= "- #{post.user.username}"%> </p>
+                </div>
+                
+                <p class="post-title"><%= "#{post.title}"%></p>                
+              </div>              
+            </td>
+            <td>
+              <div class="side-btn">
+                <div class="side-btn">
+                  <%= link_to t('.read'), post_path(locale, post), class: "side-btn-link" %> |
+                  <%= link_to t('.edit'), edit_post_path(locale, post), class: "side-btn-link" %> |
+                  <%= link_to t('.delete'), post, method: :delete, class: "side-btn-link", data: { confirm: 'Are you sure?' } %>
+                </div>
+              </div>
+            </td>
+          <tr>
+        </table>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<%= form_with(model: @user) do |form| %>
+    <div class="field">
+      <div class="control">
+        <%= form.label :username %>
+        <%= form.text_field :username %>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="control">
+        <%= form.label :email %>
+        <%= form.text_field :email %>
+      </div>  
+    </div>
+
+    <div class="field">
+      <div class="control">
+        <%= form.label :password %>
+        <%= form.password_field :password %>
+      </div>  
+    </div>
+
+    <div class="field">
+      <div class="control"> 
+        <%= form.label :password_confirmation %>
+        <%= form.password_field :password_confirmation %>
+      </div>  
+    </div>
+
+    <div class="actions">
+        <%= form.submit %>
+    </div>
+    <% end %>

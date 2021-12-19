@@ -1,0 +1,19 @@
+<div class="box">
+  <article class="media">
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <div>
+            <%=image_tag "user.png", class:"avatar-cmt avatar for-user"%> 
+            <strong><%= comment.user.username %></strong> 
+          </div>
+          <div class="cmt-content"><%= comment.content %></div>
+        </p>
+      </div>
+    </div>
+    <div class="side-btn" style="margin-right:10px">
+      <%= link_to t('.delete'), [comment.post, comment],
+                  method: :delete, class: "side-btn-link", data: { confirm: 'Are you sure?' } %>
+    </div>
+  </article>
+</div>

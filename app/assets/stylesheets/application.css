@@ -1,0 +1,190 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ /* navbar */
+ body {
+     background-color: #edf5e1;
+ }
+ .navbar {
+     background-color: #9A1750;
+ }
+ .nav{
+     color: #e3e2df;
+ }
+ .navbar-brand {
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 25px;
+     font-weight: 700;
+     color: #e3e2df;
+ }
+ .navbar-brand:hover {
+     color: #feffff;
+ }
+ .navbar-brand img{
+     display: inline;
+ }
+.navbar-right {
+    padding-right: 10px;
+}
+.nav > li > a{
+    color: #e3e2df;
+}
+.nav > li > a:hover {
+    background-color: #9A1750;
+    color: #feffff;
+    text-decoration: underline;
+}
+.nav > li > button {
+    margin: 6px;
+    border-color: #9A1750;
+    background-color: #feffff;
+    text-decoration: none;
+    color: #feffff;
+}
+.nav > li > button:hover {
+    background-color: #9A1750;
+    border-color: #feffff;
+}
+.nav > li > button > a {
+    color: #9A1750;
+    font-weight: 200;
+}
+.nav > li > button > a:hover {
+    text-decoration: none;
+    color: #feffff;
+}
+/* login page - signup page*/
+#notice {
+    color:#666362;
+}
+.btn-form {
+    margin: 6px;
+    border-color: #9A1750;
+    background-color: #feffff;
+    text-decoration: none;
+    color:  #9A1750;
+}
+.btn-form > a {
+    color:  #9A1750;
+}
+.btn-form:hover {
+    background-color: #9A1750;
+    border-color: #feffff;
+    color: #feffff;
+}
+.btn-form > a:hover {
+    color:  #feffff;
+    text-decoration: none;
+}
+#login-card {
+    background-color: #feffff;
+    padding: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 3%;
+    width:40%;
+}
+.group-btn {
+    margin-left: 30%;
+}
+legend {
+    text-align: center;
+}
+/* homepage */
+.card-post {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: #feffff;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.card-items {
+    display: inline;
+}
+.thumbnail {
+    width: 220px;
+    height: 200px;
+}
+.thumb{
+    width: 30%;
+}
+table, th, td {
+    vertical-align: top;
+}
+
+.post-content {
+    margin-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+.post-title {
+    font-size: 25px;
+    font-weight: 550;
+}
+.avatar {
+    width:30px;
+}
+.for-user{
+    display: inline;
+    color: #666362;
+    font-size: 15px;
+}
+td .side-btn {
+    text-align: right;
+    color: #ee4c7c;
+}
+.side-btn-link{
+    color: #ee4c7c;
+}
+.side-btn-link:hover{
+    color: #9a1750;
+}
+/* show-post */
+.show-post-card{
+    background-color: #feffff;
+    padding: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 2%;
+    width:70%;
+    margin-bottom: 20px;
+}
+.side-btn {
+    text-align: right;
+}
+.count-cmt {
+    font-size: 25px;
+}
+.cmt-label {
+    font-size: 15px;
+}
+.cmt-items {
+    display: inline;
+}
+.avatar-cmt {
+    vertical-align: top;
+}
+.box {
+    background-color: #F4E0E4;
+    width: 60%;
+    margin-bottom: 10px;
+}
+.cmt-content{
+    margin-left: 30px;
+}
+.text-area-post {
+    height: 500px;
+}
