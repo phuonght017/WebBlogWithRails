@@ -1,11 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a web where you can up posts and write comments. More details in file .docx
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 3.0.0
 
 * System dependencies
 
